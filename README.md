@@ -37,8 +37,8 @@ Soft Intellect Linux Course
  Syslog, Journalctl, logger, Log rotation, Configuring centralized log server, Homework.
  
 ## 12. SSH/NFS/SAMBA
- Private vs public keys, SSH, PermitRootLogin, Homework.
- NFS, /etc/exports, nfs_nobody, uid, guid, group collaboration, Homework.
+ Private vs public keys, SSH, PermitRootLogin.
+ NFS, /etc/exports, nfs_nobody, uid, guid, group collaboration.
  SAMBA, /etc/samba/smb.conf, Global directives, Shares directives, Homework.
  
 ## 13. Firewall
