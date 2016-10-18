@@ -52,6 +52,6 @@ Soft Intellect Linux Course
 ## 16. Configuration Management (Ansible)
  Centralized management, Ansible commands, Playbooks, Homework.
  
-## 17. Review of the context. Questions.
+## 17. Review of the conspect. Questions.
 
 ## 18. Exam
