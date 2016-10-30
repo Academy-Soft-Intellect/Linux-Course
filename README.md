@@ -16,16 +16,16 @@ Soft Intellect Linux Course
  Different kinds of users. Groups. /etc/passwd, /etc/shadow. visudo. Regular expressions. Basic LDAP. Homework.
 
 ## 5. Permissions and ACL. 
- Directory permission, File permissions, umask, Access Control Lists, umask, Homework.
+ Directory permission, File permissions, umask, Access Control Lists, Homework.
 
 ## 6. Networking.
  IP, Netmask, Networking Protocols, IP/TCP Suite, nmcli, nmtui, Homework.
  
 ## 7. Processes.
- Foreground processes, Background processes, Process id, top, ps, Shell script demo, Homework.
+ Foreground processes, Background processes, Process id, top, ps, Homework.
  
 ## 8. Partitions and LVM. FS mount.
- Partitions, GPT vs MRB, fdisk, LVM, FS mount, /etc/fstab, UUID, block device, ext4 vs xfs, Homework.
+ Partitions, GPT vs MBR, fdisk, LVM, FS mount, /etc/fstab, UUID, block device, ext4 vs xfs, Homework.
  
 ## 9. Software management and CRON.
  Repository, yum vs rpm, cron vs at, Creating Local Repository, Homework.
@@ -34,7 +34,7 @@ Soft Intellect Linux Course
  Units, Targets, Systemctl, Grub2, Resetting the root password, Homework.
  
 ## 11. Logging
- Syslog, Journalctl, logger, Log rotation, Configuring centralized log server, Homework.
+ Syslog/Rsyslog, Journalctl, logger, Log rotation, Configuring centralized log server, Homework.
  
 ## 12. SSH/NFS/SAMBA
  Private vs public keys, SSH, PermitRootLogin.
