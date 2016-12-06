@@ -1,14 +1,14 @@
 - Every file/directory has permission.
 - Permissions.
-  Directory
-  1. r => list the content.
-  2. w => create files.
-  3. x => go inside directory.
+Directory
+  * r => list the content.
+  * w => create files.
+  * x => go inside directory.
   
-  File
-  1. r => read  the file ;]
-  2. w => edit the file.
-  3. x => execute the file as a script.
+File
+  * r => read  the file ;]
+  * w => edit the file.
+  * x => execute the file as a script.
 - Special permissions
   1. Set user id => a program is executed with the file owner's permissions.
   2. Set group id => files created in the directory inherit its group id.
