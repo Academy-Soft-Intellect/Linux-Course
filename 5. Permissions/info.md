@@ -1,11 +1,11 @@
-- Every file/directory has permission.
+- Every file/directory has permissions.
 - For Directory objects.
   * r => list the content.
   * w => create files.
   * x => go inside directory.
   
 - For File objects.
-  * r => read  the file ;]
+  * r => read  the file :+1:
   * w => edit the file.
   * x => execute the file as a script.
 - Special permissions
