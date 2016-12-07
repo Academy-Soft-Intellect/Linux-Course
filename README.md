@@ -6,6 +6,7 @@ Soft Intellect Linux Course
 * Make all the homeworks, they are really important, do not skip any.
 * Ask me as many questions as you want, it's not about how you look, it's about your knowledge after the course ends.
 * Experiment in your virtual machine, do not be afrad, that's why it's virtual.
+
 # Conspect
 
 ## 1. Introduction to the course and the Linux OS.
