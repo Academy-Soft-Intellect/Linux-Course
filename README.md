@@ -1,7 +1,13 @@
 # Linux-Course
 Soft Intellect Linux Course
 
-## Conspect
+# Recommendations for the course:
+* Think about the material, try to explain to yourself or to your classmates.
+* Make all the homeworks, they are really important, do not skip any.
+* Ask me as many questions as you want, it's not about how you look, it's about your knowledge after the course ends.
+* Experiment in your virtual machine, do not be afrad, that's why it's virtual.
+
+# Conspect
 
 ## 1. Introduction to the course and the Linux OS.
  History of Linux, Virtual Machine Set Up(Oracle VM + CentOS7), Bash Shell, Basic Shell Commands, Environment Variables, Homework.
