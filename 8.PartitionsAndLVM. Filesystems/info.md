@@ -18,4 +18,5 @@
   *  A backup copy of the GUID partition table is created by default at the end of the disk, which eliminates the single point of failuer that exists in MBR.
   *  2TB limit no longer exists. 
 
+- Partprobe is a program that informs the operating system kernel of partition table changes, by requesting that the operating system re-read the partition table.
  
