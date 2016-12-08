@@ -20,3 +20,9 @@
 
 - Partprobe is a program that informs the operating system kernel of partition table changes, by requesting that the operating system re-read the partition table.
  
+- Logical Volume Manager, flexible way to manager your storage. 3 layers of abstraction:
+  * Physical Volume => your local hard disk, or disk presented using SAN.
+  * Volume Group => container that unites the physical volumes storage. You could distribute its storage the way you want it.
+  * Logical Volume => a block device where the File System resides. Gets its size from the volume group, you could change its size on demand.
+  * Advantages of LVM => not limited by the size of one single disk, rather by the total size. Snapshots of LV.
+[LVM advantages](http://askubuntu.com/questions/3596/what-is-lvm-and-what-is-it-used-for)
