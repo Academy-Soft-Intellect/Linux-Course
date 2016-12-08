@@ -3,7 +3,7 @@
 - In Linux for the most part (the ones with which you would be working around 99%), you have 2 types of devices:
   *  block devices => can be cached in memory and read back from cache, writes can be buffered.
   *  character devices => writing/reading is an immediate action.
-[Devices Under Linux](http://www.linuxnix.com/linuxunix-difference-between-char-and-block-file/) 
+  [Devices Under Linux](http://www.linuxnix.com/linuxunix-difference-between-char-and-block-file/) 
 
 - An interface is just a pipe that transfers data to a hard disk with its own rules. Most common interfaces:
   *  SCSI
