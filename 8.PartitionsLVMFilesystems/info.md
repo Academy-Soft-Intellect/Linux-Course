@@ -15,14 +15,14 @@
   *  A backup copy of the GUID partition table is created by default at the end of the disk, which eliminates the single point of failuer that exists in MBR.
   *  2TB limit no longer exists. 
   
- - A filesystem is the methods and data structures that an operating system uses to keep track of files on a disk or partition; that is, the way the files are organized on the disk. 
-   * mounting a file system refers to a location under the root(/) file system. You create the file systems on the so called blocking device. A good practice is each file system to be mounted in /etc/fstab.
-   * each file system has a journal, where each transaction is logged, that way a file system could be easily restored.
-   * ext4 and xfs are the most common file systems nowadays.
+- A filesystem is the methods and data structures that an operating system uses to keep track of files on a disk or partition; that is, the way the files are organized on the disk. 
+  * mounting a file system refers to a location under the root(/) file system. You create the file systems on the so called blocking device. A good practice is each file system to be mounted in /etc/fstab.
+  * each file system has a journal, where each transaction is logged, that way a file system could be easily restored.
+  * ext4 and xfs are the most common file systems nowadays.
    
-  - Logical Volume Manager(LVM) is a flexible way to manager your storage under 3 layers of abstraction.
-    * The lowest layer is the physical volumes, where only storage devices are used(disks, parititons, logical units(LUNs) on a storage area network(SAN)). The storage devices needs to be labelled as physical voluems.
-    * Physical volumes can be added to a volume group(a container) from where the storage could be distributed among logical volumes.
-    * Logical volumes are simply block devices.
+- Logical Volume Manager(LVM) is a flexible way to manager your storage under 3 layers of abstraction.
+   * The lowest layer is the physical volumes, where only storage devices are used(disks, parititons, logical units(LUNs) on a storage area network(SAN)). The storage devices needs to be labelled as physical voluems.
+   * Physical volumes can be added to a volume group(a container) from where the storage could be distributed among logical volumes.
+   * Logical volumes are simply block devices.
   
   
