@@ -10,9 +10,12 @@
 
 - Repository is usually a http container full with .rpm packages. 
   *  To create a new repo, you would need a file ending in .repo located in /etc/yum.repos.d/:
-    1. [label] = .repo file might containt different repositories, each seciont starting with a label that identifies the specific repo.
-    2. [name] = the name of the repo.
-    3. [baseurl] = URL that points to the specific repo.
+  
+  Entry in file | Meaning
+------------ | -------------
+[label] | .repo file might containt different repositories, each seciont starting with a label that identifies the specific repo.
+[name] | the name of the repo.
+[baseurl] | URL that points to the specific repo.
       
   * RPM package can be signed by GNU Privacy Guard(GPG) key to verify that your package is trustworthy. Usually the key is available trhough the repository.
   
