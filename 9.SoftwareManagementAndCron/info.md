@@ -27,15 +27,7 @@
   * Preconfigured time runner files in /etc/cron.hourly, cron.daily, cron.weekly and cron.monthly. Cron uses anacron to make sure they are always starting.
   
   * crontab -e => add a crontab entry. 
-  
-  *  Job content is made up of the following symbols:   
-  Sybmol | Meaning
------------- | -------------
-* | Don't care/Always.
-x - y | For range, x to y inclusive(2-5)
-x,y | List (5,10) run on the 5th and 10th minute.
-*/ | */7, run the job every 7 minutes.
-Jan, Feb ... Tue, Wed | English abbreviations for months and weekdays.
+  [Crontab generator](http://crontab-generator.org/)
 
 
 
