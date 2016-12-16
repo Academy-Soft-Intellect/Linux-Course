@@ -28,3 +28,14 @@
   
   * crontab -e => add a crontab entry. 
   
+  *  Job content is made up of the following symbols:   
+  Sybmol | Meaning
+------------ | -------------
+* | Don't care/Always.
+x - y | For range, x to y inclusive(2-5)
+x,y | List (5,10) run on the 5th and 10th minute.
+*/ | */7, run the job every 7 minutes.
+Jan, Feb ... Tue, Wed | English abbreviations for months and weekdays.
+
+
+
