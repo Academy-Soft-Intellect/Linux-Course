@@ -18,7 +18,7 @@ Soft Intellect Linux Course
 ## 3. File System.
  Filesystem Hierarchy Standard, Absoluve vs Relative Paths, Working with files (cp, mv and rm), Hard vs Soft Links, Archiving and compression, Homework.
  
-## 4. Users and user groups.
+## 4. Users and Groups.
  Different kinds of users. Groups. /etc/passwd, /etc/shadow. visudo. Regular expressions. Basic LDAP. Homework.
 
 ## 5. Permissions and ACL. 
@@ -40,7 +40,7 @@ Soft Intellect Linux Course
  Units, Targets, Systemctl, Grub2, Resetting the root password, Homework.
  
 ## 11. Logging
- Syslog/Rsyslog, Journalctl, logger, Log rotation, Configuring centralized log server, Homework.
+ Syslog/Rsyslog, Journalctl, logger, Log rotation, Homework.
  
 ## 12. SSH/NFS/SAMBA
  Private vs public keys, SSH, PermitRootLogin.
