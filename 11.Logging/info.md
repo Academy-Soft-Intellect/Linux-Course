@@ -9,10 +9,9 @@
    * Facility = Catherogy
    * Severity = Priority
    
-   [Basic rsyslog configuration](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/s1-basic_configuration_of_rsyslog.html)    
-    
 **Facilities** => kern, user, mail, auth, cron ...
 **Severities** => debug, info, notice, warning, alert, emerg, crit.
+   [Basic rsyslog configuration](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/s1-basic_configuration_of_rsyslog.html)    
 
     Configuration file => /etc/rsyslog.conf
 
