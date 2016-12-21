@@ -3,8 +3,7 @@
   * rsyslogd => service for managing centralized log files. Write the messages in different files in **/var/log/messages**
   * journald => with the introduction of systemd, the journald log service has been introduced sa well. Tightly integrated with systemd.
   
- **Logger**
-   * enables users to write messages to rsyslog from the command line.
+ **Logger** => enables users to write messages to rsyslog from the command line.
    
  **Rsyslog configuration**
    * Facility = Catherogy
