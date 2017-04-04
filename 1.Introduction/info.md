@@ -7,3 +7,4 @@
 * The Linux Documentation Project [TLDP](http://www.tldp.org/)
 * How to Geek, a lot of useful beginners articles. [How to Geek](https://www.howtogeek.com/tag/linux/)
 * Linux tutorials [Linux Tutorial](http://www.linux-tutorial.info/)
+* Linux Journey [Linux Journey](https://linuxjourney.com/)
