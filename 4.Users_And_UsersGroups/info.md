@@ -2,6 +2,7 @@
 - /etc/passwd => information about each user.  /etc/groups => information about groups. 
 - Sudo is a program that allows users to run programs with the security privilleges of another user, by default the superuser.
 [Sudo Info](https://en.wikipedia.org/wiki/Sudo)
+- usermod, userdel, useradd, passwd.
 - Regular expresions, match a string based on a pattern.
   * ^anna => lines that start with anna.
   * $py => files that end with py.
