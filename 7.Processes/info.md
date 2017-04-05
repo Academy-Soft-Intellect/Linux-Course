@@ -21,4 +21,9 @@
 - Showing processes:
   * top
   * ps -ef | ps aux
+  
+## Load average
+  * a cumulative CPU count of active system resource requests. 
+  * Perceived system load over a time period. Representation of expected service wait times, not only for CPU but also for disk and network I/O.
+  * uptime
 
