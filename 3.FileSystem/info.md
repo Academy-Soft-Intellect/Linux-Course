@@ -1,4 +1,4 @@
-- The Filesystem Hierarchy Standard (FHS): defines the directory structure and directory contents in Unix-like operating systems. [RedHat example](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/Reference_Guide/s1-filesystem-fhs.html)
+- The Filesystem Hierarchy Standard (FHS): defines the directory structure and directory contents in Unix-like operating systems. [FHS](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 - In RedHat 7 the /bin, /sbin, /lib and /lib64 directories are now under the /usr directory. 
 - Working with files commands: cp, mv and rm.
 - INode: a data structure used to represent a filesystem object (file, directory). File systems (ext family, xfs) cares about Inodes, humans care about names. 
