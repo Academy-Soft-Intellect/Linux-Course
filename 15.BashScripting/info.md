@@ -28,3 +28,30 @@ Variables are just a cointaner that can store data.
 COUNT=40
 ```
 If you have string literals, quote them in some brackets, since the shell treats the space character as a word separator.
+
+# Shell expansion/substitution
+
+Expanding variables
+```{r, engine='bash', count_lines}
+FIRST=Mecho
+SECOND=Puh
+echo "$FIRST $SECOND"
+```
+Command substituion
+```{r, engine='bash', count_lines}
+echo "Current time: $(date)" 
+```
+Arithmetic expansion
+```{r, engine='bash', count_lines}
+echo $[1+1]
+```
+
+# Execution an action multiple times with the for loop
+```{r, engine='bash', count_lines}
+for <VARIABLE> in <LIST>; do
+ <COMMAND>
+ ...;
+done
+```
+
+bash -x <SCRIPTNAME> to put the debug mode on a script.
