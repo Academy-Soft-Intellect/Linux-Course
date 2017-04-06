@@ -1,4 +1,5 @@
 - Alias: a shortcut, usually located in ~/.bashrc.
+- After alias creation, reload the shell 'exec bash'.
 - I/O redirection: getting the output of a command/s and putting it inside a file/special file.
 * '>' redirects STDOUT and overrides previous content.
 * '>>' redirects STDOUT and appends to previous content.
