@@ -45,3 +45,13 @@ Arithmetic expansion
 ```{r, engine='bash', count_lines}
 echo $[1+1]
 ```
+
+# Execution an action multiple times with the for loop
+```{r, engine='bash', count_lines}
+for <VARIABLE> in <LIST>; do
+ <COMMAND>
+ ...;
+done
+```
+
+bash -x <SCRIPTNAME> to put the debug mode on a script.
