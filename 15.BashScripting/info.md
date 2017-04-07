@@ -104,16 +104,6 @@ Therefore, the exit status can be retrieved with '$?'
  
 # If/then/else statement
 
-if CONDITION; then
- STATEMENT
-fi
-
-if CONDITION; then
- STATEMENT
-else
- STATEMENT
-fi
-
 ```{r, engine='bash', count_lines}
 #!/bin/bash
 
@@ -140,7 +130,7 @@ Filesystem
 /dev/sda1
 ```
 
-In 99 $ of the time, SED is used to replace a string inside a file with another one.
+In 99 % of the time, SED is used to replace a string inside a file with another one.
 
 ```{r, engine='bash', count_lines}
 $ sed 's/vermin/pony/g' metamorphosis.txt
