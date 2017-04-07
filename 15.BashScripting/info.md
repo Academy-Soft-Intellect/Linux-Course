@@ -55,3 +55,23 @@ done
 ```
 
 bash -x <SCRIPTNAME> to put the debug mode on a script.
+
+# Referencing a script arguments.
+
+$* vs $@
+
+```{r, engine='bash', count_lines}
+#!/bin/bash
+
+for ARG in "$*"; do
+ echo $ARG
+done
+```
+
+```{r, engine='bash', count_lines}
+#!/bin/bash
+
+for ARG in "$@"; do
+ echo $ARG
+done
+```
