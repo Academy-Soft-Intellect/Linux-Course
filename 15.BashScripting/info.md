@@ -75,3 +75,30 @@ for ARG in "$@"; do
  echo $ARG
 done
 ```
+
+# Exit status.
+Every command returns an exit status. A successfull command exits with an exit number of 0.
+Upon completion, a command's exit status is passed to the parent process and stored in the '?' variable.
+Therefore, the exit status can be retrieved with '$?'
+
+# Integer comparison.
+- eq => is equal to => [ "$a" -eq "$b" ]
+- ne => is not equal to [ "$a" -ne "$b" ]
+- gt => is greater than [ "$a" -gt "$b" ]
+- ge => is greater than or equal to [ "$a" -ge "$b" ]
+- lt => is less than [ "$a" -lt "$b" ]
+- le => is less than or equal to [ "$a" -le "$b" ]
+
+# String comparison.
+- = is equal to => [ abc = abc ]
+- == is equal to => [ abc == def ]
+- != is not equal to => [ abc != def ]
+
+# Testing files and directories.
+
+- b => file exists and is special blokc => [ -b FILE ]
+- c => file exists and is character special => [ -c FILE ]
+- d => file exists and is directory => [ -d DIRECTORY ]
+- e => file exists => [ -e FILE ]
+- x => file exists and execute permission is granted => [ -x FILE ] 
+ 
