@@ -1,4 +1,5 @@
 [Ansible introduction](https://www.ansible.com/configuration-management)
+[Ansible Getting Started guide, official documentation](http://docs.ansible.com/ansible/intro_getting_started.html)
 
 # Ansible layout
 * /etc/ansible => The main configuration folder which encompasses all Ansible config
