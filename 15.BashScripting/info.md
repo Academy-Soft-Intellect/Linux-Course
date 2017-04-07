@@ -139,3 +139,11 @@ Filesystem
 /dev/mapper/cl-root
 /dev/sda1
 ```
+
+In 99 $ of the time, SED is used to replace a string inside a file with another one.
+
+```{r, engine='bash', count_lines}
+$ sed 's/vermin/pony/g' metamorphosis.txt
+```
+
+AWK and SED are huge topics, the idea is just to be aware about them and know their most often use case.
