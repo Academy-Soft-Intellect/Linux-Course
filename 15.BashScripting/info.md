@@ -126,4 +126,16 @@ else
  echo "No db for us"
 fi
 ```
+
+
+# AWK and SED
+
+In 99 % of the time, AWK is used to print a column from an ouput.
+Example below, printing all the block devices from 'df -h', excluding the temporary file systems.
+
+```{r, engine='bash', count_lines}
+df -h | grep -v tmpfs | awk '{print $1}'
+Filesystem
+/dev/mapper/cl-root
+/dev/sda1
 ```
