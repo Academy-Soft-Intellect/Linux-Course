@@ -96,9 +96,34 @@ Therefore, the exit status can be retrieved with '$?'
 
 # Testing files and directories.
 
-- b => file exists and is special blokc => [ -b FILE ]
+- b => file exists and is special block => [ -b FILE ]
 - c => file exists and is character special => [ -c FILE ]
 - d => file exists and is directory => [ -d DIRECTORY ]
 - e => file exists => [ -e FILE ]
 - x => file exists and execute permission is granted => [ -x FILE ] 
  
+# If/then/else statement
+
+if CONDITION; then
+ STATEMENT
+fi
+
+if CONDITION; then
+ STATEMENT
+else
+ STATEMENT
+fi
+
+```{r, engine='bash', count_lines}
+#!/bin/bash
+
+systemctl is-active mariadb > /dev/null 2>$1
+MARIADB_ACTIVE=$?
+
+if [ "$MARIADB_ACTIVE" -eq 0 ]; then
+ echo "We have database"
+else
+ echo "No db for us"
+fi
+```
+```
