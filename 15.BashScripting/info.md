@@ -104,16 +104,6 @@ Therefore, the exit status can be retrieved with '$?'
  
 # If/then/else statement
 
-if CONDITION; then
- STATEMENT
-fi
-
-if CONDITION; then
- STATEMENT
-else
- STATEMENT
-fi
-
 ```{r, engine='bash', count_lines}
 #!/bin/bash
 
@@ -126,4 +116,24 @@ else
  echo "No db for us"
 fi
 ```
+
+
+# AWK and SED
+
+In 99 % of the time, AWK is used to print a column from an ouput.
+Example below, printing all the block devices from 'df -h', excluding the temporary file systems.
+
+```{r, engine='bash', count_lines}
+df -h | grep -v tmpfs | awk '{print $1}'
+Filesystem
+/dev/mapper/cl-root
+/dev/sda1
 ```
+
+In 99 % of the time, SED is used to replace a string inside a file with another one.
+
+```{r, engine='bash', count_lines}
+$ sed 's/vermin/pony/g' metamorphosis.txt
+```
+
+AWK and SED are huge topics, the idea is just to be aware about them and know their most often use case.
