@@ -1,6 +1,7 @@
 - Bash sciprt is simply an executable file, composed of a list of commands. 
 - #! => indicates that the file is an executable shell script and the command interpreter.
 - #!/bin/bash => the command interpreter is bash.
+- Good styling practices: use comments to clarify to readers the purpose and logic of the script. The top of every script should include comments providing an overview of the script's purpose, intendend actions ...
 
 # A number of characters have special meaning to bash
  '#' beginning of a comment line.
@@ -53,6 +54,14 @@ for <VARIABLE> in <LIST>; do
  ...;
 done
 ```
+
+
+```{r, engine='bash', count_lines}
+for EVEN in $(seq 2 2 8);
+ do echo "$EVEN";
+ done;
+```
+
 
 bash -x <SCRIPTNAME> to put the debug mode on a script.
 
