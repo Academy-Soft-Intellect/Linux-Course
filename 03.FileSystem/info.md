@@ -6,5 +6,6 @@
 - Hard link: directory entry (a file) pointing to the same inode.
 - tar: software utility for collecting many files into one archive file.
 - gzip: compression (a way of reducing the size of a file on disk using different algorithms and mathematical calculations ) utility.
+- du: estimate file space usage.
 
 Usually tar and gzip are runned together.
