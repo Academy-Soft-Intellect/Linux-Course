@@ -1,5 +1,7 @@
 - Privilleged vs Unprivilleged users. Root user has unlimited access.
+- id => show information about the current logged in user.
 - /etc/passwd => information about each user.  /etc/groups => information about groups. 
+- useradd, usermod, userdel, userdel -r, passwd, chage, chage -l
 - Sudo is a program that allows users to run programs with the security privilleges of another user, by default the superuser.
 [Sudo Info](https://en.wikipedia.org/wiki/Sudo)
 - usermod, userdel, useradd, passwd.
