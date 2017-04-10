@@ -9,3 +9,6 @@
 - du: estimate file space usage.
 
 Usually tar and gzip are runned together.
+
+Side note:
+I will be outside of Bulgaria from 9th to 13th May.
