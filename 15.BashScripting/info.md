@@ -2,6 +2,8 @@
 - #! => indicates that the file is an executable shell script and the command interpreter.
 - #!/bin/bash => the command interpreter is bash.
 - Good styling practices: use comments to clarify to readers the purpose and logic of the script. The top of every script should include comments providing an overview of the script's purpose, intendend actions ...
+- Indent lines with multiline statements to represent the hierarchy of code logic and the flow of control structures.
+- Use consistent formatting through the entirety of a script.
 
 # A number of characters have special meaning to bash
  '#' beginning of a comment line.
