@@ -25,7 +25,7 @@ Soft Intellect Linux Course
  Directory permission, File permissions, umask, Access Control Lists, Homework.
 
 ## 6. Networking.
- IP, Netmask, Networking Protocols, IP/TCP Suite, nmcli, nmtui, Homework.
+ IP, Netmask, Networking Protocols, IP/TCP Suite, nmcli, nmtui, DNS, DNS Zones, /etc/resolv.conf, DNS resolution queries, Resource Records. Homework.
  
 ## 7. Processes.
  Foreground processes, Background processes, Process id, top, ps, Homework.
