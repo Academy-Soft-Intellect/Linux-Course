@@ -31,6 +31,9 @@
 
 - DNS, DNS zones
   * hierarchical naming system that translates IPs to FQDNs(forward lookup) and FQDNs to IPs(reverse loookup).
-  * The DNS is recursively distributed into ZONEs, each zone is responsbile for a specific part of the tree.
+  * The DNS for a domain is recursively distributed into ZONEs, each zone is responsbile for a specific part of the domain tree.
   * resource record is an entry in a DNS zone file that contain informatino about a particular name or object in the zone.
   
+ - Resource record consist of owner-name, TTL(time to live), class(almost always "IN" ( internet )), type ( the sort of information stored by this records, "A" record maps a hosts name ot an IPv4 address ) and data.
+  * Example => www.soft-intellect.bg 300 IN A 192.168.0.1
+  * Example => \<OWNER-NAME> \<TTL> \<class> \<type> \<data>
