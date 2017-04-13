@@ -1,7 +1,16 @@
+ 
 **Logging in Linux**
+
   * Direct logging, services write to specific log files (Samba, Apache)
-  * rsyslogd => service for managing centralized log files. Write the messages in different files in **/var/log/messages**
-  * journald => with the introduction of systemd, the journald log service has been introduced sa well. Tightly integrated with systemd.
+  
+  * rsyslogd => service for managing centralized log files. Write the messages in different files in **/var/log/**
+  
+  * /var/log/messages => generic rsyslog folder. /var/log/secure => security and authentication-related messages. /var/log/cron => periodically executed tasks. /var/log/boot.log => system startup.
+  
+  
+  * journald => with the introduction of systemd, the journald log service has been introduced as well. Tightly integrated with systemd. Log management service that collects messages from the kernel, the early stages of the boot process ... It writes these messages to a structured journal of events that by, default, does not persist between reboots.
+  
+ 
   
  **Logger** => enables users to write messages to rsyslog from the command line.
    
