@@ -21,9 +21,9 @@
   * The chmod command suports the -R option for recursively setting permissions on an entire directory tree. When using this option, be sure to use the X permissions instead of the x to indicate that execute permissions should only be set on directories, not regular files.
   
 - Special permissions
-  * Set user id => a program is executed with the file owner's permissions.
-  * Set group id => files created in the directory inherit its group id.
-  * Sticky bit => any user can create files, but only the owner of the file can delete it.
+  * Set user id => a program is executed with the file owner's permissions. A good exmaple is /bin/passwd, which needs to modify /etc/passwd, file which only root can edit.
+  * Set group id => files created in the directory inherit its group id. A good way to allow a group to share its permission :)
+  * Sticky bit => any user can create files, but only the owner of the file can delete it. By default the /tmp directory is set that way.
   
 - chown, umask.
 
