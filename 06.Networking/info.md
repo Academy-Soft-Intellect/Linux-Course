@@ -3,7 +3,10 @@
 - Networking is 
   * IP Address  => numerical label assigned to each device using the Internet Protocol for communication.
   * Subnet Mask => to which network a computer belongs.
-  * DNS => to translate IP addresses into Fully Qualified Domain Names(FQDNs).
+  * DNS => to translate FQDNs(Fully Qualified Domain Names) to IPs, process known as forward lookup and IPs to FQDNs, a process knowns as reverse lookup.
+  * Default gateway => A default gateway serves as an access point or IP router that a networked computer uses to send  information to a computer in another network or the Internet. Default simply means that this gateway is used by default, unless an application specifies another gateway.
+ 
+- [Subnet calculator](http://www.subnet-calculator.com/)
 
 - Networking interface name parts
   * en => ethernet interface.
