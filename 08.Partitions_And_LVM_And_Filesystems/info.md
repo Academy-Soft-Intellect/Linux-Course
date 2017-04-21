@@ -20,11 +20,11 @@
   * make sure your blocking device is unique and the same between each reboot, mount the partitions and disks with their UUID, blkid.
   * each file system has a journal, where each transaction is logged, that way a file system could be easily restored.
   * ext4 and xfs are the most common file systems nowadays.
-  
-   
+  * superblock is a filesystem metadata and defines its size, status ... It is super important to each file system and therefore is stored in multiple redundant copies. If a superblock of a filesystem, becomes corrupt then the file system cannot be mounted. You could use 'fsck' to repair it from one of the already made back up copies.
+     
 - Logical Volume Manager(LVM) is a flexible way to manager your storage under 3 layers of abstraction.
    * The lowest layer is the physical volumes, where only storage devices are used(disks, parititons, logical units(LUNs) on a storage area network(SAN)). The storage devices needs to be labelled as physical voluems.
    * Physical volumes can be added to a volume group(a container) from where the storage could be distributed among logical volumes.
-   * Logical volumes are simply block devices.
+   * Logical volumes are simply virtual block devices => we could locate filesystems on the top of them.
   
   
