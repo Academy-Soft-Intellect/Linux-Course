@@ -1,3 +1,4 @@
+import os
 from random import randint
 
 potential_tasks = {
@@ -89,3 +90,5 @@ with open( "/tmp/exam", "w" ) as f:
     for task in final_tasks:
         f.write(str(counter) + "." + task + "\n")
         counter += 1
+
+os.system("cp /tmp/exam /tmp/exam.backup")
