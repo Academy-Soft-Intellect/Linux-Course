@@ -1,0 +1,75 @@
+tasks = {
+
+    "Essential": [
+            "Redirect all your aliases into file /tmp/aliases",
+            "Grep for users starting with 'r' and redirect it to /tmp/userswithr",
+            "Find all files under /boot starting with 'vm'",
+            "Find all man keywords for 'partition' and redirect it to /tmp/manpartinfo"
+    ],
+
+    "Filesystem": [
+            "Create a compression archive of /home directory with name home.tar.gz, place it under /tmp",
+            "Create an archive of 3 files, name it archive.tar"
+    ],
+
+    "UsersAndGroups": [
+            "Add a sudo user 'genadi', use the 'wheel' group",
+            "Add two users 'pesho' and 'gosho', make one of them member of 'wheel' group",
+            "Create user 'vieri' and set his password to 'hello', make changable each 90 days",
+            "Add a group 'skilledworkers', add 'linuxadmin' user as a member of it."
+    ],
+
+    "Permissions": [
+            "Create a file  'script.sh' inside /tmp directory, make it executable",
+            "Create a directory '/tmp/lol', make sure it has group collaboration set.",
+            "Create a file 'weirdfile', create a user 'john', make sure john is added as being able to edit the file, add him using ACL."
+    ],
+
+    "Networking": [
+            "Get all your listening TCP services and redirect the output in /tmp/services",
+            "Change your hostname to 'linuxmaster'",
+            "Add a host entry before any DNS lookup, 192.168.0.254 amilast?",
+            "Change your DNS server to use Google's one 8.8.8.8"
+    ],
+
+    "Processes": [
+            "Redirect all your current shell processes to /tmp/processes",
+            "Redirect the load average to /tmp/loadaverage",
+            "Find any ssh process and redirect it to /tmp/ssh"
+    ],
+
+    "PartitionsLVM": [
+             "Two disks are added to your virtual machine, /dev/s*. Split the first one into two master partitions, create ext4 fs on both of them. \
+             Mount the first fs under /first, mount the second under /second. Make sure they are pesistant. Second disk must be used for LVM, fs schould be \
+             xfs, persistant again, mount it under /lvm"
+    ],
+
+    "SftMngAndCron": [
+            "Add the Extra Packages for Enterprise Linux(EPEL) repository",
+            "Create a simple bash script with the name 'cool.sh' that must run each day",
+            "Search for the httpd package, if not found install it"
+    ],
+
+    "Systemd": [
+            "Reset the root password to 'softintellect'",
+            "Check the status of sshd and redirect to /tmp/statusshd",
+            "Check whether httpd is enabled and redirect to /tmp/httpdenabled",
+            "Get the default target and redirect to /tmp/defaulttarget"
+    ],
+
+    "Logging": [
+
+    ],
+
+    "SSH": [
+
+    ],
+
+    "NFSandSamba": [
+
+    ],
+
+    "Firewall": [
+
+    ]
+}
