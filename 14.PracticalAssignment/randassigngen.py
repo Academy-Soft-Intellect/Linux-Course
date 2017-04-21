@@ -63,11 +63,13 @@ potential_tasks = {
     ],
 
     "SSH": [
-
+            "Permit the Root login",
+            "Change the default SSH port",
+            "Copy your ssh id to localhost"
     ],
 
     "NFSandSamba": [
-
+            "Export /nfs/data to 192.168.0.253, read/write, root_squashed"
     ],
 
     "Firewall": [
