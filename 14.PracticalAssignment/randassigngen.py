@@ -72,7 +72,8 @@ potential_tasks = {
     ],
 
     "NFSandSamba": [
-            "Export /nfs/data to 192.168.0.253, read/write, root_squashed"
+            "Export /nfs/data to 192.168.0.253, read/write, root_squashed",
+            "Export samba share with label [Data] under path=/samba/data"
     ],
 
     "Firewall": [
