@@ -1,4 +1,6 @@
-tasks = {
+from random import randint
+
+potential_tasks = {
 
     "Essential": [
             "Redirect all your aliases into file /tmp/aliases",
@@ -39,9 +41,7 @@ tasks = {
     ],
 
     "PartitionsLVM": [
-             "Two disks are added to your virtual machine, /dev/s*. Split the first one into two master partitions, create ext4 fs on both of them. \
-             Mount the first fs under /first, mount the second under /second. Make sure they are pesistant. Second disk must be used for LVM, fs schould be \
-             xfs, persistant again, mount it under /lvm"
+             "Two disks are added to your virtual machine, /dev/s*. Split the first one into two master partitions, create ext4 fs on both of them.\nMount the first fs under /first, mount the second under /second. Make sure they are pesistant. \nSecond disk must be used for LVM, fs schould be xfs, persistant again, mount it under /lvm"
     ],
 
     "SftMngAndCron": [
@@ -73,3 +73,19 @@ tasks = {
 
     ]
 }
+
+final_tasks = []
+
+
+for task_cathegory, tasks in potential_tasks.items():
+    l = len(tasks)
+    if l > 0:
+        random_task = tasks[randint(0, l - 1)]
+        final_tasks.append(random_task)
+
+counter = 1
+
+with open( "/tmp/exam", "w" ) as f:
+    for task in final_tasks:
+        f.write(str(counter) + "." + task + "\n")
+        counter += 1
