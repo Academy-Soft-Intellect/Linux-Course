@@ -59,7 +59,10 @@ potential_tasks = {
     ],
 
     "Logging": [
-
+            "Cat the generic log file and output it to /tmp/logcontent",
+            "Log a message to rsyslog",
+            "Get the logging for process 0 and redirect it to /tmp/loguid0",
+            "Set the rotating logging policy to 3 weeks."
     ],
 
     "SSH": [
