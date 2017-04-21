@@ -9,18 +9,11 @@
 
 
 - Repository is usually a http container full with .rpm packages. 
-  *  To create a new repo, you would need a file ending in .repo located in /etc/yum.repos.d/:
-  
-  Entry in file | Meaning
------------- | -------------
-[label] | .repo file might containt different repositories, each seciont starting with a label that identifies the specific repo.
-[name] | the name of the repo.
-[baseurl] | URL that points to the specific repo.
-      
+  * To create a new repo, you would need a file ending in .repo located in /etc/yum.repos.d/:
+  * The file must contain [label] section, [name] and [baseurl]. 
+  * Use you-config-manager to automate the process.
   * RPM package can be signed by GNU Privacy Guard(GPG) key to verify that your package is trustworthy. Usually the key is available trhough the repository.
-  
-  * yum_config_manager can be used to automatically set up a repo for you.  
-  
+ 
 
 - The cron service is used as a generic one to run processes automatically at specific times.
 
