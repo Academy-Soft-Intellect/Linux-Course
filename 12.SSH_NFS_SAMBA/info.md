@@ -11,3 +11,7 @@
  
  * Once the message has been encrypted, the server lets the client in.
  
+**PermitRootLogin**
+ * the 'root' username exists on every Linux system, so an attacker only need to guess the password, instead of a password and username.
+ * prohibit password authentication, additional layer of security after the SSH public key has been distributed. No password logins.
+ * change ssh to listen on different port
