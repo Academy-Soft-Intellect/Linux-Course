@@ -98,3 +98,7 @@ with open( "/tmp/exam", "w" ) as f:
         counter += 1
 
 os.system("cp /tmp/exam /tmp/exam.backup")
+
+print("You assignment is located in /tmp/exam")
+print("A back up of the assignment could be found in /tmp/exam.backp")
+print("Do not run the script anymore, since it would produce a new exam")
