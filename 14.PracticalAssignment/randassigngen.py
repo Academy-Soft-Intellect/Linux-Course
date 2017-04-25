@@ -77,7 +77,12 @@ potential_tasks = {
     ],
 
     "Firewall": [
+            "Open the firewall for both NFS and CIFS"
+    ],
 
+    "Bash-Scripting": [
+            "Create a bash script that display the storage on all xfs and ext4 file systems in human readable format, make sure it runs as cron job every 4 hours",
+            "Create a bash script that display the storage on all temprorary file systems, make sure it runs as cron job every day"
     ]
 }
 
@@ -86,9 +91,8 @@ final_tasks = []
 
 for task_cathegory, tasks in potential_tasks.items():
     l = len(tasks)
-    if l > 0:
-        random_task = tasks[randint(0, l - 1)]
-        final_tasks.append(random_task)
+    random_task = tasks[randint(0, l - 1)]
+    final_tasks.append(random_task)
 
 counter = 1
 
