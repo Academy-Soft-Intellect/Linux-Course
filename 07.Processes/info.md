@@ -27,3 +27,6 @@
   * Perceived system load over a time period. Representation of expected service wait times, not only for CPU but also for disk and network I/O.
   * uptime
 
+## Putty 
+ * make sure you are using Putty to log in to your server from now on, pay attention to the NAT vs Bridged Ip as well as the permit root login feature in /etc/ssh/sshd_config
+ 
