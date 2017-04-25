@@ -9,3 +9,7 @@
 3. If the network interface is not associated with a zone, the default zone will be used.
 
 Valid zones: public, trusted, home, dmz, block drop, for more zones 'man firewalld.zones'
+
+**Pre-defined services**
+Pre-defined services are bound to ports, so they are easier to cofigure.
+ssh, dhcpv7-client, samba-client, for more pre-defined services 'firewall-cmd --get-service'
