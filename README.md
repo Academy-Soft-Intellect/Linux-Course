@@ -25,10 +25,10 @@ Soft Intellect Linux Course
  Directory permission, File permissions, umask, Access Control Lists, Homework.
 
 ## 6. Networking.
- IP, Netmask, Networking Protocols, IP/TCP Suite, nmcli, nmtui, DNS, DNS Zones, /etc/resolv.conf, DNS resolution queries, Resource Records. Homework.
+ IP, Netmask, Networking Protocols, IP/TCP Suite, nmcli, nmtui, /etc/resolv.conf, DNS, DNS zones, Resource Records. Homework.
  
 ## 7. Processes.
- Foreground processes, Background processes, Process id, top, ps, Homework.
+ Foreground processes, Background processes, Process priority, Process id, top, ps, kill, pkill, Homework.
  
 ## 8. Partitions and LVM. FS mount.
  Partitions, GPT vs MBR, fdisk, LVM, FS mount, /etc/fstab, UUID, block device, ext4 vs xfs, Homework.
