@@ -30,11 +30,14 @@
  * /etc/samba/smb.conf => main configuration file
  * Validation of the above file, 'testparm'
  * Example share look
- [data] 
- path = /samba_data
- read only = No
- guest ok = Yes
- comment = data for samba
+ ```{r, engine='bash', count_lines}
+[data] 
+path = /samba_data
+read only = No
+guest ok = Yes vs valid users = dave
+comment = data for samba
+```
+
  
  Since the guest ok = No, we could mount it with a guest => mount -t cifs -o guest //10.30.199.111/data /mnt
  
