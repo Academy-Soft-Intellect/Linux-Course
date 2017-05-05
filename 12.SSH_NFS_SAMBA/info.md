@@ -29,9 +29,8 @@
   * cifs-utils, samba-client 
  * /etc/samba/smb.conf => main configuration file
  * Validation of the above file, 'testparm'
- * Example share look:
- 
- [data]
+ * Example share look
+ [data] 
  path = /samba_data
  read only = No
  guest ok = Yes
