@@ -26,7 +26,7 @@
  
  **SAMBA**
  * Provides file and print services to not only Linux-Unix based clients, Windows clients could  interact with it.
-  * cifs-utils, samba-client 
+ * cifs-utils, samba-client, samba packages. 
  * /etc/samba/smb.conf => main configuration file
  * Validation of the above file, 'testparm'
  * Example share look
