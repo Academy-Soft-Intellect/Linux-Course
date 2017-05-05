@@ -12,4 +12,4 @@ Valid zones: public, trusted, home, dmz, block drop, for more zones 'man firewal
 
 **Pre-defined services**
 Pre-defined services are bound to ports, so they are easier to cofigure.
-ssh, dhcpv7-client, samba-client, for more pre-defined services 'firewall-cmd --get-service'
+ssh, dhcpv6-client, samba-client, for more pre-defined services 'firewall-cmd --get-service'
