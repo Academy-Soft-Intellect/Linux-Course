@@ -26,7 +26,19 @@
  
  **SAMBA**
  * Provides file and print services to not only Linux-Unix based clients, Windows clients could  interact with it.
+  * cifs-utils, samba-client 
  * /etc/samba/smb.conf => main configuration file
  * Validation of the above file, 'testparm'
+ * Example share look:
+ 
+ [data]
+ path = /samba_data
+ read only = No
+ guest ok = Yes
+ comment = data for samba
+ 
+ Since the guest ok = No, we could mount it with a guest => mount -t cifs -o guest //10.30.199.111/data /mnt
+ 
+ 
  * passdb backeind = _tdbsam => stores user and machine account data in a "TDB"(trivial database). Using this backend does not require any additional configuration. 
  
