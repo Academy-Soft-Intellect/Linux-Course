@@ -22,6 +22,7 @@
  * no_root_squash => by default the root on the client machine is treated as user nobody, if selected then root on the client machine will have the same level of access to the files on the system as root on the server.
  * open the nfs port using firewall-cmd.
  * NFS fs is concatenated with a ':' character. => mount -t nfs 10.30.199.111:/data /mnt
+ * Good practice is to mount the fs after the network is initialized with 'defaults,_netdev\
  
  **SAMBA**
  * Provides file and print services to not only Linux-Unix based clients, Windows clients could  interact with it.
