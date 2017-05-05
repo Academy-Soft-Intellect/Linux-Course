@@ -18,9 +18,10 @@
 
 **NFS**
  * mounting file systems over a network and interact with them as though they are mounted locally, Linux-Unix based only.
- * nfs-utils package, /etc/exports is the file where you export your nfs-shares, exportfs -r
+ * nfs-utils package ( both on the client and the server), /etc/exports is the file where you export your nfs-shares, exportfs -r
  * no_root_squash => by default the root on the client machine is treated as user nobody, if selected then root on the client machine will have the same level of access to the files on the system as root on the server.
  * open the nfs port using firewall-cmd.
+ * NFS fs is concatenated with a ':' character. => mount -t nfs 10.30.199.111:/data /mnt
  
  **SAMBA**
  * Provides file and print services to not only Linux-Unix based clients, Windows clients could  interact with it.
