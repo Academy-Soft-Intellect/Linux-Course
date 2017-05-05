@@ -9,7 +9,7 @@
   4. **graphical.target**
   5. reboot.target
   
-- The **default configuration** is located in **/usr/lib/system/systemd**. You could override the defaults in **/etc/systemd/system**.
+- The **default configuration** is located in **/usr/lib/systemd/system**. You could override the defaults in **/etc/systemd/system**.
 
 - **systemctl** is the command that rules the units.
   * E.g **systemctl status sshd**
