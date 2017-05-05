@@ -17,8 +17,14 @@
  * change ssh to listen on different port
 
 **NFS**
- * mounting file systems over a network and interact with them as though they are mounted locally.
- * nfs-utiks package, /etc/exports is the file where you export your nfs-shares, exportfs -r
+ * mounting file systems over a network and interact with them as though they are mounted locally, Linux-Unix based only.
+ * nfs-utils package, /etc/exports is the file where you export your nfs-shares, exportfs -r
  * no_root_squash => by default the root on the client machine is treated as user nobody, if selected then root on the client machine will have the same level of access to the files on the system as root on the server.
  * open the nfs port using firewall-cmd.
+ 
+ **SAMBA**
+ * Provides file and print services to not only Linux-Unix based clients, Windows clients could  interact with it.
+ * /etc/samba/smb.conf => main configuration file
+ * Validation of the above file, 'testparm'
+ * passdb backeind = _tdbsam => stores user and machine account data in a "TDB"(trivial database). Using this backend does not require any additional configuration. 
  
