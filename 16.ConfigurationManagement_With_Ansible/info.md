@@ -42,4 +42,18 @@
 ```{r, engine='bash', count_lines}
 ansible-playbook apache.yml --ask-become-pass
 ```
+* Handlers are just like tasks, but they only run when they have been told by a task that changes have occurred on the client system. For instance, we have a handler here that starts the Nginx service after the package is installed. 
+```{r, engine='bash', count_lines}
+---
+- hosts: droplets
+  tasks:
+    - name: Installs nginx web server
+      apt: pkg=nginx state=installed update_cache=true
+      notify:
+        - start nginx
+
+  handlers:
+    - name: start nginx
+      service: name=nginx state=started
+```
 
