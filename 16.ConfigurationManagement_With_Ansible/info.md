@@ -12,5 +12,23 @@
 
 * Ansible playbooks are written in the YAML data serialization format.
 * Some important properties:
---ask-become-pass instead, while also swapping out the use of sudo throughout your playbooks with become.
+1. Run your playbooks with --ask-become-pass, instead of storing the password somewhere.
+2. If you need to use sudo, use 'become', the sudo user is expressed with 'become_user'.
+```{r, engine='bash', count_lines}
+ cat apache.yml
+---
+- hosts: all
+  become: yes
+  become_user: some_sudo_user
+  vars:
+    http_port: 80
+    max_clients: 200
+  tasks:
+  - name: ensure apache is at the latest version
+    yum: name=httpd state=latest
+```
+
+```{r, engine='bash', count_lines}
+ansible-playbook apache.yml --ask-become-pass
+```
 
