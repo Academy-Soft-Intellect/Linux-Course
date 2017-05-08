@@ -26,6 +26,8 @@
   tasks:
   - name: ensure apache is at the latest version
     yum: name=httpd state=latest
+  - name: ensure apache is running
+    service: name=httpd state=started  
 ```
 
 ```{r, engine='bash', count_lines}
