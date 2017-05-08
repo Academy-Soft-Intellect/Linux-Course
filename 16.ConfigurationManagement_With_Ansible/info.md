@@ -6,6 +6,16 @@
 * /etc/ansible/hosts => This file holds information for the hosts/and host groups you will configure
 * /etc/ansible/ansible.cfg => The main configuration file for Ansible
 
+# Good practice
+* Ansible depends on SSH access to the servers you are managing. Ansible works best when you have SSH public key authentication configured so that you don’t have to use passwords to access your hosts.
+
+# Inventory file
+* Ansible uses an inventory file to determine what hosts to work against. In its simplest form, an inventory file is just a text file containing a list of host names or IP addresses - one on each line. The default location is /etc/ansible/hosts
+
+# Modules
+*  Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through Playbooks. 
+* [Modules](http://docs.ansible.com/ansible/modules.html)
+
 # Playbook
 * Ansible playbooks are a way to send commands to remote computers in scripted way. Instead of using Ansible commands individually to remotely configure computers from the command line, you can configure entire complex environments by passing a script to one or more systems.
 
