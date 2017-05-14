@@ -19,6 +19,7 @@
   * mounting a file system refers to a location under the root(/) file system. You create the file systems on the so called blocking device. A good practice is each file system to be mounted in /etc/fstab.
   * make sure your blocking device is unique and the same between each reboot, mount the partitions and disks with their UUID, blkid.
   * blkid gives an overview of existing blocking devices with a file system on them and UUID, as well as the file system used.
+  * Unmounting is not possible if the mount point is accseed by a process. 'lsof' lists all open files and the process accessing them in the mont point.
   * each file system has a journal, where each transaction is logged, that way a file system could be easily restored.
   * ext4 and xfs are the most common file systems nowadays.
   * superblock is a filesystem metadata and defines its size, status ... It is super important to each file system and therefore is stored in multiple redundant copies. If a superblock of a filesystem, becomes corrupt then the file system cannot be mounted. You could use 'fsck' to repair it from one of the already made back up copies.
