@@ -37,10 +37,12 @@ read only = No
 guest ok = Yes vs valid users = dave
 comment = data for samba
 ```
+If the guest ok = Yes, we could mount it guest option => mount -t cifs -o guest //10.30.199.111/data /mnt
+If we have a valid user/s, we need to add them to the database => smbpasswd -a dave.
+To have a look at our local db, we could use 'pdbedit -l'.
 
- 
- Since the guest ok = No, we could mount it with a guest => mount -t cifs -o guest //10.30.199.111/data /mnt
- 
+If the share is browsable, we could have a look from our client with 'smbclient -L samba_server -U tom'
+
  
  * passdb backeind = _tdbsam => stores user and machine account data in a "TDB"(trivial database). Using this backend does not require any additional configuration. 
  
