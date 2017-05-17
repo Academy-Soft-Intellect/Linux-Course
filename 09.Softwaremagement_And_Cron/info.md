@@ -17,7 +17,7 @@
 
 - The cron service is used as a generic one to run processes automatically at specific times.
 
-  * Preconfigured time runner files in /etc/cron.hourly, cron.daily, cron.weekly and cron.monthly. Cron uses anacron to make sure they are always starting.
+  * Preconfigured time runner files in /etc/cron.hourly, cron.daily, cron.weekly and cron.monthly. 
   
   * crontab -e => add a crontab entry. 
   [Crontab generator](http://crontab-generator.org/)
