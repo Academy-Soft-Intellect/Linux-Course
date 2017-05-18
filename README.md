@@ -39,25 +39,25 @@ Soft Intellect Linux Course
 ## 10. SystemD and the Boot Procedure.
  Units, Targets, Systemctl, Grub2, Resetting the root password, Homework.
  
-## 11. Logging
+## 11. Logging.
  Syslog/Rsyslog, Journalctl, logger, Log rotation, Homework.
  
-## 12. SSH/NFS/SAMBA
+## 12. SSH/NFS/SAMBA.
  Private vs public keys, SSH, PermitRootLogin.
  NFS, /etc/exports, nfs_nobody, uid, guid, group collaboration.
  SAMBA, /etc/samba/smb.conf, Global directives, Shares directives, Homework.
  
-## 13. Firewall
+## 13. Firewall.
  Firewalld, Zones, Default zone, Homework.
  
 ## 14. Practical assignment, work in team.
 
-## 15. Bash Scripting
+## 15. Bash Scripting.
  Variables, Loops, Functions, AWK, Sed, Homework.
  
-## 16. Configuration Management (Ansible)
+## 16. Configuration Management (Ansible).
  Centralized management, Ansible commands, Playbooks, Homework.
  
 ## 17. Review of the conspect. Questions.
 
-## 18. Exam
+## 18. Exam.
