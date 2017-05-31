@@ -52,7 +52,6 @@ potential_tasks = {
     ],
 
     "Systemd": [
-            "Reset the root password to 'softintellect'",
             "Check the status of sshd and redirect to /tmp/statusshd",
             "Check whether httpd is enabled and redirect to /tmp/httpdenabled",
             "Get the default target and redirect to /tmp/defaulttarget"
