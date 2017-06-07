@@ -23,12 +23,11 @@
 * Some important properties:
 1. Run your playbooks with --ask-become-pass, instead of storing the password somewhere.
 2. If you need to use sudo, use 'become', the sudo user is expressed with 'become_user'.
+[Become Privileges](http://docs.ansible.com/ansible/become.html)
 ```{r, engine='bash', count_lines}
  cat apache.yml
 ---
 - hosts: all
-  become: yes
-  become_user: some_sudo_user
   vars:
     http_port: 80
     max_clients: 200
