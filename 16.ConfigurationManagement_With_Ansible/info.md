@@ -45,3 +45,5 @@ ansible-playbook apache.yml --ask-become-pass
 * Handlers are just like tasks, but they only run when they have been told by a task that changes have occurred on the client system. For instance, we have a handler here that starts the Nginx service after the package is installed. 
 
 * When ansible-playbook is executed with --check it will not make any changes on remote systems. Instead, any module instrumented to support ‘check mode’ (which contains most of the primary core modules, but it is not required that all modules do this) will report what changes they would have made rather than making them.
+
+* A task is simply the use of one of Ansible modules. For exampple, installing package would be a task since it will require you to use the ‘yum’ module.
