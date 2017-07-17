@@ -18,6 +18,12 @@ ansible all --list-hosts
 
 # ad hoc command 
 ansible all -a "df -hT"
+
+# using the 'setup' module for ansible, list all of the known facts for all systems configured in the 'hosts' file on the #system.
+ansible all -m setup 
+
+# filter the result 
+ansible all -m setup -a 'filter=ans*ipv4*'
 ```
 
 # Modules
