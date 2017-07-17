@@ -15,6 +15,32 @@
 # Modules
 *  Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through Playbooks. 
 * [Modules](http://docs.ansible.com/ansible/modules.html)
+* Install 'ansible-doc'
+* List all available modules or search for a desired one. View the module information and make sure you are aware about the
+mandatory options with the '=' sign. Examples:
+
+```{r, engine='bash', count_lines}
+#list all the modules coming with the standart installation.
+ansible -l 
+
+#search for some file system modules
+ansible -l | grep fs
+ansible zfs
+
+#when zfs module is used, name and state are mandatory fields.
+Options (= is mandatory):
+= name
+        File system, snapshot or volume name e.g. `rpool/myfs'
+= state
+        Whether to create (`present'), or remove (`absent') a file system, snapshot or volume.
+        
+# Create a new volume called myvol in pool rpool.
+- zfs:
+    name: rpool/myvol
+    state: present
+    volsize: 10M
+
+```
 
 # Playbook
 * Ansible playbooks are a way to send commands to remote computers in scripted way. Instead of using Ansible commands individually to remotely configure computers from the command line, you can configure entire complex environments by passing a script to one or more systems.
@@ -48,10 +74,5 @@ ansible-playbook apache.yml --ask-become-pass
 
 * A task is simply the use of one of Ansible modules. For exampple, installing package would be a task since it will require you to use the ‘yum’ module.
 
-* 
-```{r, engine='bash', count_lines}
-ansible-doc -l
-ansible-doc | grep yum
-ansible yum 
-#check the examples
-```
+
+
