@@ -12,6 +12,14 @@
 # Inventory file
 * Ansible uses an inventory file to determine what hosts to work against. In its simplest form, an inventory file is just a text file containing a list of host names or IP addresses - one on each line. The default location is /etc/ansible/hosts
 
+```{r, engine='bash', count_lines}
+# check your hosts
+ansible all --list-hosts
+
+# ad hoc command 
+ansible all -a "df -hT"
+```
+
 # Modules
 *  Ansible ships with a number of modules (called the ‘module library’) that can be executed directly on remote hosts or through Playbooks. 
 * [Modules](http://docs.ansible.com/ansible/modules.html)
