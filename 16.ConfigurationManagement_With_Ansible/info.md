@@ -70,6 +70,7 @@ Options (= is mandatory):
 1. Run your playbooks with --ask-become-pass, instead of storing the password somewhere.
 2. If you need to use sudo, use 'become', the sudo user is expressed with 'become_user'.
 [Become Privileges](http://docs.ansible.com/ansible/become.html)
+3. If your playbooks is failing, you could debug with super verbose output 'vvvv'.
 ```{r, engine='bash', count_lines}
  cat apache.yml
 ---
