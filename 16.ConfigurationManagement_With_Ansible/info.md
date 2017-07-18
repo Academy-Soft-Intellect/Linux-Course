@@ -65,12 +65,9 @@ Options (= is mandatory):
 # Playbook
 * Ansible playbooks are a way to send commands to remote computers in scripted way. Instead of using Ansible commands individually to remotely configure computers from the command line, you can configure entire complex environments by passing a script to one or more systems.
 
-* Ansible playbooks are written in the YAML data serialization format.
-* Some important properties:
-1. Run your playbooks with --ask-become-pass, instead of storing the password somewhere.
-2. If you need to use sudo, use 'become', the sudo user is expressed with 'become_user'.
-[Become Privileges](http://docs.ansible.com/ansible/become.html)
-3. If your playbooks is failing, you could debug with super verbose output 'vvvv'.
+* Ansible playbooks are written in the YAML data serialization format. Notes:
+1. If you need to use sudo, use 'become'. [Become Privileges](http://docs.ansible.com/ansible/become.html)
+2. If your playbooks is failing, you could debug with super verbose output adding'vvvv'.
 ```{r, engine='bash', count_lines}
  cat apache.yml
 ---
@@ -86,11 +83,7 @@ Options (= is mandatory):
 ```
 Do not forget that for each module, we could easily look up the mandatory inputs using 'ansible-doc module_name'
 
-```{r, engine='bash', count_lines}
-ansible-playbook apache.yml --ask-become-pass
-```
-
-* Handlers are just like tasks, but they only run when they have been told by a task that changes have occurred on the client system. For instance, we have a handler here that starts the Nginx service after the package is installed. 
+* Handlers are just like tasks, but they only run when they have been told by a task that changes have occurred on the client system. 
 
 * When ansible-playbook is executed with --check it will not make any changes on remote systems. Instead, any module instrumented to support ‘check mode’ (which contains most of the primary core modules, but it is not required that all modules do this) will report what changes they would have made rather than making them.
 
