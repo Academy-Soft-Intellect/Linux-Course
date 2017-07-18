@@ -75,15 +75,16 @@ Options (= is mandatory):
  cat apache.yml
 ---
 - hosts: all
-  vars:
-    http_port: 80
-    max_clients: 200
+  remote_user: testuser
+  become: yes
+  become_method: sudo
   tasks:
   - name: ensure apache is at the latest version
     yum: name=httpd state=latest
   - name: ensure apache is running
     service: name=httpd state=started  
 ```
+Do not forget that for each module, we could easily look up the mandatory inputs using 'ansible-doc module_name'
 
 ```{r, engine='bash', count_lines}
 ansible-playbook apache.yml --ask-become-pass
