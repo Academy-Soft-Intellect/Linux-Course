@@ -24,6 +24,9 @@ ansible all -m setup
 
 # filter the result 
 ansible all -m setup -a 'filter=ans*ipv4*'
+
+# a little bit more complicated commands, require a module
+ansible all -m shell -a 'yum list installed | grep python'
 ```
 
 # Modules
